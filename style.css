@@ -1,0 +1,310 @@
+/* 
+    Removing default browser spacing.
+    This makes our design look the same in all browsers.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* 
+    Styling the complete webpage background
+*/
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f7fb;
+
+    color: #333;
+
+}
+
+
+
+/*
+    Main container that holds our complete app
+*/
+.container {
+
+    width: 90%;
+
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+
+
+/*
+    Header section styling
+*/
+header {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+header h1 {
+
+    color: #2c3e50;
+
+    margin-bottom: 10px;
+
+}
+
+
+header p {
+
+    color: #777;
+
+}
+
+
+
+
+
+/*
+    Common styling for all sections
+*/
+section {
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+/*
+    Section headings
+*/
+h2 {
+
+    margin-bottom: 15px;
+
+    color: #34495e;
+
+}
+
+
+
+
+
+/*
+    Form layout
+*/
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+
+
+
+/*
+    Labels above input fields
+*/
+label {
+
+    margin-top: 10px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+}
+
+
+
+
+
+/*
+    Styling input boxes and dropdown
+*/
+input,
+select {
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+}
+
+
+
+
+
+/*
+    Add Expense button
+*/
+button {
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #3498db;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+/*
+    Button effect when mouse moves over it
+*/
+button:hover {
+
+    background-color: #2980b9;
+
+}
+
+
+
+
+
+/*
+    Total expense display box
+*/
+.total-section {
+
+    text-align: center;
+
+    background-color: #ecf0f1;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+
+
+#totalAmount {
+
+    color: #27ae60;
+
+    font-size: 28px;
+
+}
+
+
+
+
+
+/*
+    Individual expense cards.
+    JavaScript will create these cards later.
+*/
+.expense-card {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #ffffff;
+
+    border-left: 5px solid #3498db;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+
+}
+
+
+
+
+
+/*
+    Delete button inside expense card
+*/
+.delete-btn {
+
+    background-color: #e74c3c;
+
+    padding: 8px 12px;
+
+    font-size: 14px;
+
+}
+
+
+
+.delete-btn:hover {
+
+    background-color: #c0392b;
+
+}
+
+
+
+
+
+/*
+    Making website mobile friendly
+*/
+@media (max-width: 500px) {
+
+
+    .container {
+
+        width: 95%;
+
+        padding: 15px;
+
+    }
+
+
+    header h1 {
+
+        font-size: 24px;
+
+    }
+
+
+}
